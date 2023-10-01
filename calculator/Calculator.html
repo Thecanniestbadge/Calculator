@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <!---
+        Name: Nicholas Vickery
+        Date: start date - 06/20/2023, end date - 6/25/2023
+        Project: calculator  
+    -->
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <header><h1>The Calculator</h1></header>
+    <section id="descriptions">
+        <h2>Explanation of Calculator Functions</h2>
+        <p>The C and CE buttons clears the calculator of anything you hit but once you hit equals it will save in the history list below the calculator.</p>
+        <p>The % percent button changes any number into a decimal form.</p> 
+        <p>The <= back space button just takes away the current input but one space at a time.</p>
+        <p>The / division button divides two numbers.</p>
+        <p>The * multiplication button multiplies two numbers.</p>
+        <p>The - subtraction button subtracts two numbers.</p>
+        <p>The + addition button adds two numbers.</p>
+        <p>The 1/x fraction button takes any number you input and puts it into a fraction and gets the total for you.</p>
+        <p>The ^ exponent button allows you to add an exponent to a number.</p>
+        <p>The square root button takes the square root of any number.</p>
+        <p>The +/- positive and negative button allows you to change any number hit into a negative or positive number.</p>
+        <p>The = equal button calculates your function and saves it in the history list.</p>
+        <p>PLEASE HIT THE EQUALS SIGN AFTER EVERY TIME YOU DO A EQUATION TO SAVE IT TO THE HISTORY LIST!</p>
+    </section>
+    <div class="calculator">
+        <input id="display" type="text" value="0" readonly> <!-- readonly specifies that an input field is read-only-->
+        <div class="buttons"></div>
+        <div id="errorMessage"></div>
+        <div class="history">
+            <ul id="historyList"></ul>
+        </div>   
+    </div>
+</body>
+</html>

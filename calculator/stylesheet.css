@@ -1,0 +1,92 @@
+/* 
+    Name: Nicholas Vickery
+    Date: start date - 06/20/2023, end date - 6/25/2023
+    Project: Calculator
+*/
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: lightslategrey;
+    margin: 0;
+}
+header {
+    position: fixed;
+    margin-bottom: 900px;
+    font-size:xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#descriptions {
+    margin-bottom: 50px;
+    font-size: large;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-start;
+}
+.calculator {
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 250px;
+}
+#display {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    text-align: left;
+    overflow: auto;
+}
+#errorMessage {
+    color: red;
+    background-color: black;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+button:active {
+    background: white;
+}
+.glowing {
+    font-family: 'Courier New', Courier, monospace; /* glowing buttons*/
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 0 20px green;
+    border-radius: 5px;
+    animation: glowing 1s infinite;
+}
+@keyframes glowing { /* keyframes specifies the rules for the animation code*/
+    0% { box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px green; }
+    50% { box-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green, 0 0 40px green; }
+    100% { box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green, 0 0 20px green; }
+}
+.history {
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+    height: fit-content;
+}
+.history ul {
+    list-style-type: none;
+    padding-left: 0;
+}
